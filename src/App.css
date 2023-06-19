@@ -17,3 +17,16 @@
 .App-link {
   color: #61dafb;
 }
+
+.Movie-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Movie-wrapper {
+  width: 500px;
+  background-color: bisque;  
+}
