@@ -1,11 +1,16 @@
 import "./App.css";
 
-function App() {
+const App = ()=>  {
+const search = (q) =>{
+  console.log({q})
+}
+
   return (
     <div className="App">
       <header className="App-header">
       <h1>Movie App</h1>
-    <div className="Movie-container">
+      <input className="Movie-search" placeholder="Cari film kesayangan anda..." onChange={({target}) => search(target.value)} />
+    <div className="Movie-container">     
       <div className="Movie-wrapper">
         <div className="Movie-title">Test</div>
         <img src="" alt="" className="Movie-img" />
