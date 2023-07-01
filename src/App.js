@@ -1,11 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { getMovielist, searchMovie } from "./api";
 
 const App = () => {
+  const [popularMovies, setPopularMovies] = useState ([])
+
   useEffect(() => {
-    getMovielist();
-  });
+    setPopularMovies(getMovielist());
+  }, []);
 
   const search = (q) => {
     console.log({ q });
