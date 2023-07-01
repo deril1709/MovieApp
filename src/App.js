@@ -6,12 +6,15 @@ const App = () => {
   const [popularMovies, setPopularMovies] = useState ([])
 
   useEffect(() => {
-    setPopularMovies(getMovielist());
+    getMovielist().then((result)=>{
+      setPopularMovies(result)
+    })
   }, []);
 
   const search = (q) => {
     console.log({ q });
   };
+  console.log({popularMovies:popularMovies})
 
   return (
     <div className="App">
