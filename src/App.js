@@ -13,15 +13,17 @@ const App = () => {
 
   const popularMovieList = ()=>{
     return popularMovies.map((movie,i) =>{
+      return(
       <div className="Movie-wrapper" key={i}>
       <div className="Movie-title">{movie.title}</div>
-      <img src="" alt="" className="Movie-img" />
-      <div className="Movie-date">12-03-2001</div>
-      <div className="Movie-rate">9.9</div>
+      <img  alt="" className="Movie-img" src={movie.poster_path} />
+      <div className="Movie-date">{movie.release_date}</div>
+      <div className="Movie-rate">{movie.vote_average}</div>
     </div>
+      )
     }
-    ); }
-  };
+    ) };
+  
 
   const search = (q) => {
     console.log({ q });
@@ -40,5 +42,6 @@ const App = () => {
       </header>
     </div>
   );
+};
 
 export default App;
