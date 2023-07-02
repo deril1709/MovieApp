@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: black;
+}
+.App-name{
   color: white;
 }
 
@@ -24,12 +27,14 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 
 .Movie-wrapper {
   width: 500px;
-  background-color: bisque;  
+  background-color: antiquewhite;
+  color: black;  
   padding-top: 30px;
 }
 .Movie-search{
