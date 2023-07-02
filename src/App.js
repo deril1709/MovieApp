@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { getMovielist, searchMovie } from "./api";
 
+
 const App = () => {
   const [popularMovies, setPopularMovies] = useState ([])
 
