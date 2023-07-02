@@ -28,7 +28,7 @@ const App = () => {
 
   const search = async (q) => {
     const query = await searchMovie(q)
-    console.log({ query: query })
+    setPopularMovies(query.results)
   };
 
 
