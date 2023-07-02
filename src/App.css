@@ -43,4 +43,14 @@
  font-size: 24px;
  padding-bottom: 20px;
  padding: 20px;
+ margin-bottom: 1rem;
+}
+.Movie-title{
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.Movie-rate{
+  color: orangered;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
