@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { getMovielist, searchMovie } from "./api";
+import {Router} from "react-router";
 
 
 const App = () => {
