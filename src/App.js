@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { getMovielist, searchMovie } from "./api";
-import {Router} from "react-router";
+import {BrowserRouter as Router ,Routes,Route} from "react-router";
+import Test from './components/test';
 
 
 const App = () => {
+
   const [popularMovies, setPopularMovies] = useState ([])
 
   useEffect(() => {
@@ -34,15 +36,18 @@ const App = () => {
 
 
   return (
+    <><Router>
+    <Routes><Route path="/test" element={<Test/>}/></Routes>
+    </Router>
     <div className="App">
-      <header className="App-header">
-        <h1 className="App-name">Movie App</h1>
-        <input className="Movie-search" placeholder="Cari film kesayangan anda..." onChange={({ target }) => search(target.value)} />
-        <div className="Movie-container">
-          <PopularMovieList/>
-        </div>
-      </header>
-    </div>
+        <header className="App-header">
+          <h1 className="App-name">Movie App</h1>
+          <input className="Movie-search" placeholder="Cari film kesayangan anda..." onChange={({ target }) => search(target.value)} />
+          <div className="Movie-container">
+            <PopularMovieList />
+          </div>
+        </header>
+      </div></>
   );
 };
 
