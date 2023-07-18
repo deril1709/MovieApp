@@ -36,9 +36,6 @@ const App = () => {
 
 
   return (
-    <><Router>
-    <Routes><Route path="/test" element={<Test/>}/></Routes>
-    </Router>
     <div className="App">
         <header className="App-header">
           <h1 className="App-name">Movie App</h1>
@@ -47,7 +44,7 @@ const App = () => {
             <PopularMovieList />
           </div>
         </header>
-      </div></>
+      </div>
   );
 };
 
